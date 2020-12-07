@@ -412,7 +412,7 @@ img {
    width: 30px;
   }
   to {
-   width: 230px;
+   width: 100%;
   }
   /*Your code here.*/
 
@@ -424,7 +424,7 @@ img {
    width:30px;
   }
   to {
-    width: 230px;
+    width: 100%;
   }
 
 
