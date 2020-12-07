@@ -434,7 +434,7 @@ img {
 #stars{
 
   animation-name: shooting_stars;
-  animation-duration: 10s;
+  animation-duration: 5s;
   -webkit-animation-name: shooting_stars;
 
 }
