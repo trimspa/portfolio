@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Space Grotesk", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(5, 5, 5);
+  line-height: 1.5;
+ font-size: 1em; 
+  
+} 
+
+h1{
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 2em;
+  text-align: center;
+
+}
+
+h3{
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+p {
+  padding: 30px;
+  text-align: left;
+}
+
+a{ color: #1ae5be;
+
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+/* Navbar code adapted from W3Schools: https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #01147e;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #1ae5be; text-decoration: underline; color: #010101;}
+
+ul.topnav li a.active {background-color: #1ae5be; text-decoration: underline; color: #010101;}
+
+ul.topnav li.right {float: right;}
+
+
+
+
+
+
+footer{
+  background-color: #01447e;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: #1ae5be;
+}
+
+
+.headshot{
+  border: 10px 10px #01447e solid;
+  min-height: 600px;
+
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+
+.gallery{
+  min-height: 600px;
+  /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.gallery > img{
+  border: 10px 10px #01447e solid;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  margin: 20px;
+  width: 300px;
+
+}
+
+.gallery img {
+  border: 5px solid ;
+
+
+}
+
+/* grid on about */
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  row-gap: 4em;
+  justify-content: center;
+
+
+  
+
+
+}
+
+.grid-item {
+  background-color: #01447e;
+  border: 10px solid #1ae5be;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.2em;
+  
+}
+
+
+
+.headingstyle{
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+/*about page photo styling*/
+
+
+.photobox {
+  width: 200px;
+  height: 120px;
+}
+
+/* resize images */
+.photobox img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*grid on projects provided by */
+
+.hero {
+
+  background: url('https://images.unsplash.com/photo-1595126907069-4d65de64ef38?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center ;
+  background-size: cover;
+
+  padding: 4rem 2rem;
+  font-weight: 100;
+  color: #010101;
+  text-emphasis-color: #010101;
+  
+
+  /* Grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+}
+
+
+
+
+
+.abouthero {
+
+  background-image: url();
+  background-size: cover;
+  padding: 4rem 2rem;
+  font-weight: 100;
+  color: #01447e;
+
+  
+
+  /* Grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+}
+
+
+
+
+/*responsive nav bar*/
+
+
+/* FORM */
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+form {
+  border-radius: 10px;
+  border: 5px solid #1ae5be;
+  font-weight: bold;
+  font-size: 1em;
+  
+}
+
+legend{ 
+  font-size: 125%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+  
+  
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #01447e;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 1em;
+
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+  font-size: 1em;
+  border: 3px solid #fff;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #01447e;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+
+input[type=checkbox]{
+    display:inline;
+    width:inherit;
+}
+
+input[type=submit] {
+  background-color: #01447e;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font: bold;
+  font-family: inherit;
+}
+
+input[type=submit]:hover {
+  opacity: 0.9;
+}
+
+fieldset { 
+  border: none;
+
+}
+
+#msg{ 
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+
+span{
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bolder;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* flip card_provided by W3schools https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+
+
+.cardcontainer {
+  display: flex;
+   min-width: 40%;
+    padding: 10px;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+  
+
+}
+
+#text {
+ padding: 5px; 
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  letter-spacing: 1px;
+  
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+ 
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+.flip-card-front {
+  background-color: #61a6e3;
+  color: black;
+  object-fit: cover;
+}
+
+
+
+.flip-card-back {
+  background-color: #01447e;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* animation */ 
+
+@-webkit-keyframes shooting_stars{
+
+  from {
+   width: 30px;
+  }
+  to {
+   width: 230px;
+  }
+  /*Your code here.*/
+
+}
+
+@keyframes shooting_stars
+{
+  from {
+   width:30px;
+  }
+  to {
+    width: 230px;
+  }
+
+
+} 
+
+
+#stars{
+
+  animation-name: shooting_stars;
+  animation-duration: 10s;
+  -webkit-animation-name: shooting_stars;
+
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*parallax code from w3schools: https://www.w3schools.com/howto/howto_css_parallax.asp*/
+.parallax {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1601946753062-25743b5e975b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1612&q=80");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*video embedded via iframe from 
+tipswithpunch: https://www.youtube.com/watch?v=9YffrCViTVk*/
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
+}
+
+
+/* Navbar */
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+}
+  
+
+@media (prefers-reduced-motion: reduce)
+ {
+  
+
+
+  .flip-card:hover .flip-card-inner {
+    transform: none;
+    transition-duration: 20s;
+  
+  }
+  
+  
+  
+  .flip-card-back {
+    background-color: #01447e;
+    color: white;
+    transform: none;
+  }
+
+  #stars {
+    animation: none; }
+
+  
+}
+
+
+
+
+ 
+
+
