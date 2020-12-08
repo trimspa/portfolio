@@ -87,9 +87,6 @@ ul.topnav li.right {float: right;}
 
 
 
-
-
-
 footer{
   background-color: #01447e;
   color: white;
@@ -173,6 +170,8 @@ footer a {
   font-size: 1.7em;
   line-height: 1.2em;
 }
+
+
 /*about page photo styling*/
 
 
@@ -181,14 +180,14 @@ footer a {
   height: 120px;
 }
 
-/* resize images */
+
 .photobox img {
   width: 100%;
   height: auto;
 }
 
 
-/*grid on projects provided by */
+/*grid/ hero section code provided by https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ */
 
 .hero {
 
@@ -228,8 +227,6 @@ footer a {
 
 
 
-/*responsive nav bar*/
-
 
 /* FORM */
 
@@ -242,6 +239,7 @@ form {
   border: 5px solid #1ae5be;
   font-weight: bold;
   font-size: 1em;
+  font-family: inherit;
   
 }
 
@@ -267,8 +265,11 @@ input {
   border-radius: 25px;
   box-sizing: border-box;
   font-size: 1em;
+  font-family: inherit;
+  font-weight: bold;
 
 }
+
 span{
   margin-left:20%;
   font-family: italic;
@@ -289,10 +290,7 @@ textarea{
 }
 
 
-input[type=checkbox]{
-    display:inline;
-    width:inherit;
-}
+
 
 input[type=submit] {
   background-color: #01447e;
@@ -360,7 +358,7 @@ img {
   width: 400px;
   height: 400px;
   perspective: 1000px;
-
+  margin: 6px;
 
 }
 
@@ -416,7 +414,7 @@ img {
   to {
    width: 100%;
   }
-  /*Your code here.*/
+
 
 }
 
