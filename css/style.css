@@ -56,7 +56,7 @@ a.skip:focus{
 }
 
 *:focus{
-  border: 2px solid #1ae5be;
+  border: 7px solid #1ae5be;
 }
 
 /* Navbar code adapted from W3Schools: https://www.w3schools.com/howto/howto_js_topnav.asp*/
